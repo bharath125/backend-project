@@ -6,8 +6,9 @@ const productRoute = require("./route/product.route");
 
 const app = express();
 
-//middleware
+//middleware for json data
 app.use(express.json());
+//middleware for form data
 app.use(express.urlencoded({ extended: false }));
 
 //routes
